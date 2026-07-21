@@ -298,7 +298,7 @@ LIMIT 1;
 -- a location.
 
 SELECT DISTINCT
-    c1.customer_id, c1.city, o.restaurant_id, DATE(o.order_date)
+    c1.customer_id, c1.city, o.restaurant_id, DATE(o.order_date) as diffrent_date
 FROM
     customers AS c1
         JOIN
